@@ -11,6 +11,10 @@
 		837CD8442755654800C6274E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837CD8432755654800C6274E /* ContentView.swift */; };
 		837CD8462755654B00C6274E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 837CD8452755654B00C6274E /* Assets.xcassets */; };
 		837CD8492755654B00C6274E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 837CD8482755654B00C6274E /* Preview Assets.xcassets */; };
+		837CD8582755694000C6274E /* LexendDeca-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 837CD8552755694000C6274E /* LexendDeca-Regular.ttf */; };
+		837CD8592755694000C6274E /* LexendDeca-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 837CD8562755694000C6274E /* LexendDeca-SemiBold.ttf */; };
+		837CD85A2755694000C6274E /* LexendDeca-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 837CD8572755694000C6274E /* LexendDeca-Bold.ttf */; };
+		837CD85D27556BDB00C6274E /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837CD85C27556BDB00C6274E /* Fonts.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,11 @@
 		837CD8432755654800C6274E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		837CD8452755654B00C6274E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		837CD8482755654B00C6274E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		837CD8552755694000C6274E /* LexendDeca-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LexendDeca-Regular.ttf"; sourceTree = "<group>"; };
+		837CD8562755694000C6274E /* LexendDeca-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LexendDeca-SemiBold.ttf"; sourceTree = "<group>"; };
+		837CD8572755694000C6274E /* LexendDeca-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LexendDeca-Bold.ttf"; sourceTree = "<group>"; };
+		837CD85B2755697900C6274E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		837CD85C27556BDB00C6274E /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +60,14 @@
 		837CD8402755654800C6274E /* swiftui-chat */ = {
 			isa = PBXGroup;
 			children = (
+				837CD85B2755697900C6274E /* Info.plist */,
 				837CD8412755654800C6274E /* swiftui_chatApp.swift */,
-				837CD8432755654800C6274E /* ContentView.swift */,
+				837CD84F2755655D00C6274E /* Views */,
+				837CD8502755656300C6274E /* ViewModels */,
+				837CD8512755656900C6274E /* Models */,
+				837CD8522755657000C6274E /* Services */,
+				837CD8532755657C00C6274E /* Helpers */,
+				837CD8542755658C00C6274E /* Fonts */,
 				837CD8452755654B00C6274E /* Assets.xcassets */,
 				837CD8472755654B00C6274E /* Preview Content */,
 			);
@@ -65,6 +80,53 @@
 				837CD8482755654B00C6274E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		837CD84F2755655D00C6274E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				837CD8432755654800C6274E /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		837CD8502755656300C6274E /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		837CD8512755656900C6274E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		837CD8522755657000C6274E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		837CD8532755657C00C6274E /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				837CD85C27556BDB00C6274E /* Fonts.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		837CD8542755658C00C6274E /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				837CD8572755694000C6274E /* LexendDeca-Bold.ttf */,
+				837CD8552755694000C6274E /* LexendDeca-Regular.ttf */,
+				837CD8562755694000C6274E /* LexendDeca-SemiBold.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,7 +187,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				837CD8592755694000C6274E /* LexendDeca-SemiBold.ttf in Resources */,
+				837CD85A2755694000C6274E /* LexendDeca-Bold.ttf in Resources */,
 				837CD8492755654B00C6274E /* Preview Assets.xcassets in Resources */,
+				837CD8582755694000C6274E /* LexendDeca-Regular.ttf in Resources */,
 				837CD8462755654B00C6274E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,6 +203,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				837CD8442755654800C6274E /* ContentView.swift in Sources */,
+				837CD85D27556BDB00C6274E /* Fonts.swift in Sources */,
 				837CD8422755654800C6274E /* swiftui_chatApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,6 +338,7 @@
 				DEVELOPMENT_TEAM = Q53T86P258;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "swiftui-chat/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -301,6 +368,7 @@
 				DEVELOPMENT_TEAM = Q53T86P258;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "swiftui-chat/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

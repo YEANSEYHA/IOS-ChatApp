@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  RootView.swift
 //  swiftui-chat
 //
 //  Created by Chris Ching on 2021-11-29.
@@ -7,15 +7,18 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct RootView: View {
+    
     var body: some View {
         Text("Hello, world!")
             .padding()
+            .font(Font.chatHeading)
     }
+    
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct RootView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        RootView()
     }
 }
