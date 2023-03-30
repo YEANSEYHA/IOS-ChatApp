@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		090CF14429D2F3E100E43294 /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090CF14329D2F3E100E43294 /* CustomTabBar.swift */; };
+		0955C2A829D535BB00B20D4A /* TabBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0955C2A729D535BB00B20D4A /* TabBarButton.swift */; };
 		837CD8422755654800C6274E /* swiftui_chatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837CD8412755654800C6274E /* swiftui_chatApp.swift */; };
-		837CD8442755654800C6274E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837CD8432755654800C6274E /* ContentView.swift */; };
+		837CD8442755654800C6274E /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837CD8432755654800C6274E /* RootView.swift */; };
 		837CD8462755654B00C6274E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 837CD8452755654B00C6274E /* Assets.xcassets */; };
 		837CD8492755654B00C6274E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 837CD8482755654B00C6274E /* Preview Assets.xcassets */; };
 		837CD8582755694000C6274E /* LexendDeca-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 837CD8552755694000C6274E /* LexendDeca-Regular.ttf */; };
@@ -18,9 +20,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		090CF14329D2F3E100E43294 /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
+		0955C2A729D535BB00B20D4A /* TabBarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarButton.swift; sourceTree = "<group>"; };
 		837CD83E2755654800C6274E /* swiftui-chat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swiftui-chat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		837CD8412755654800C6274E /* swiftui_chatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftui_chatApp.swift; sourceTree = "<group>"; };
-		837CD8432755654800C6274E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		837CD8432755654800C6274E /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		837CD8452755654B00C6274E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		837CD8482755654B00C6274E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		837CD8552755694000C6274E /* LexendDeca-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LexendDeca-Regular.ttf"; sourceTree = "<group>"; };
@@ -41,6 +45,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		090CF14229D2F3BD00E43294 /* Custom Tab Bar */ = {
+			isa = PBXGroup;
+			children = (
+				090CF14329D2F3E100E43294 /* CustomTabBar.swift */,
+				0955C2A729D535BB00B20D4A /* TabBarButton.swift */,
+			);
+			path = "Custom Tab Bar";
+			sourceTree = "<group>";
+		};
 		837CD8352755654800C6274E = {
 			isa = PBXGroup;
 			children = (
@@ -85,7 +98,8 @@
 		837CD84F2755655D00C6274E /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				837CD8432755654800C6274E /* ContentView.swift */,
+				837CD8432755654800C6274E /* RootView.swift */,
+				090CF14229D2F3BD00E43294 /* Custom Tab Bar */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -202,8 +216,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				837CD8442755654800C6274E /* ContentView.swift in Sources */,
+				090CF14429D2F3E100E43294 /* CustomTabBar.swift in Sources */,
+				837CD8442755654800C6274E /* RootView.swift in Sources */,
 				837CD85D27556BDB00C6274E /* Fonts.swift in Sources */,
+				0955C2A829D535BB00B20D4A /* TabBarButton.swift in Sources */,
 				837CD8422755654800C6274E /* swiftui_chatApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
