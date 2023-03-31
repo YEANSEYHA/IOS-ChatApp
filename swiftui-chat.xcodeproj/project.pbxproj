@@ -15,6 +15,7 @@
 		0955C2B129D5599600B20D4A /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 0955C2B029D5599600B20D4A /* FirebaseFirestoreSwift */; };
 		0955C2B329D5599600B20D4A /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 0955C2B229D5599600B20D4A /* FirebaseStorage */; };
 		0955C2B529D55A1600B20D4A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0955C2B429D55A1600B20D4A /* AppDelegate.swift */; };
+		0993ACEF29D71E6800CE391E /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0993ACEE29D71E6800CE391E /* AuthViewModel.swift */; };
 		837CD8422755654800C6274E /* swiftui_chatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837CD8412755654800C6274E /* swiftui_chatApp.swift */; };
 		837CD8442755654800C6274E /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837CD8432755654800C6274E /* RootView.swift */; };
 		837CD8462755654B00C6274E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 837CD8452755654B00C6274E /* Assets.xcassets */; };
@@ -31,6 +32,8 @@
 		0955C2A929D5399500B20D4A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0955C2B429D55A1600B20D4A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0955C2B629D55E4300B20D4A /* swiftui-chat.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "swiftui-chat.entitlements"; sourceTree = "<group>"; };
+		097BFAC529D56C6B00F373F1 /* swiftui-chatDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "swiftui-chatDebug.entitlements"; sourceTree = "<group>"; };
+		0993ACEE29D71E6800CE391E /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		837CD83E2755654800C6274E /* swiftui-chat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swiftui-chat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		837CD8412755654800C6274E /* swiftui_chatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftui_chatApp.swift; sourceTree = "<group>"; };
 		837CD8432755654800C6274E /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
@@ -86,6 +89,7 @@
 		837CD8402755654800C6274E /* swiftui-chat */ = {
 			isa = PBXGroup;
 			children = (
+				097BFAC529D56C6B00F373F1 /* swiftui-chatDebug.entitlements */,
 				0955C2B629D55E4300B20D4A /* swiftui-chat.entitlements */,
 				837CD85B2755697900C6274E /* Info.plist */,
 				0955C2A929D5399500B20D4A /* GoogleService-Info.plist */,
@@ -123,6 +127,7 @@
 		837CD8502755656300C6274E /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				0993ACEE29D71E6800CE391E /* AuthViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -245,6 +250,7 @@
 				0955C2B529D55A1600B20D4A /* AppDelegate.swift in Sources */,
 				090CF14429D2F3E100E43294 /* CustomTabBar.swift in Sources */,
 				837CD8442755654800C6274E /* RootView.swift in Sources */,
+				0993ACEF29D71E6800CE391E /* AuthViewModel.swift in Sources */,
 				837CD85D27556BDB00C6274E /* Fonts.swift in Sources */,
 				0955C2A829D535BB00B20D4A /* TabBarButton.swift in Sources */,
 				837CD8422755654800C6274E /* swiftui_chatApp.swift in Sources */,
@@ -375,11 +381,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "swiftui-chat/swiftui-chat.entitlements";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_ENTITLEMENTS = "swiftui-chat/swiftui-chatDebug.entitlements";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"swiftui-chat/Preview Content\"";
-				DEVELOPMENT_TEAM = R7LTD4L3TC;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "swiftui-chat/Info.plist";
@@ -395,6 +401,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yeanseyha-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -410,7 +417,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"swiftui-chat/Preview Content\"";
-				DEVELOPMENT_TEAM = R7LTD4L3TC;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "swiftui-chat/Info.plist";
