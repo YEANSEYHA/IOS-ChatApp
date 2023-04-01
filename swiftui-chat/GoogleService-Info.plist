@@ -12,22 +12,22 @@
 	<string>583193003278</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
-	<key>BUNDLE_ID</key>
+	<key>CFBundleIdentifier</key>
 	<string>com.yeanseyha-swiftui-chat</string>
 	<key>PROJECT_ID</key>
 	<string>swiftui-chatapp-923fc</string>
 	<key>STORAGE_BUCKET</key>
 	<string>swiftui-chatapp-923fc.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
-	<false></false>
+	<false/>
 	<key>IS_ANALYTICS_ENABLED</key>
-	<false></false>
+	<false/>
 	<key>IS_APPINVITE_ENABLED</key>
-	<true></true>
+	<true/>
 	<key>IS_GCM_ENABLED</key>
-	<true></true>
+	<true/>
 	<key>IS_SIGNIN_ENABLED</key>
-	<true></true>
+	<true/>
 	<key>GOOGLE_APP_ID</key>
 	<string>1:583193003278:ios:13dcef18443e203b49035f</string>
 </dict>
