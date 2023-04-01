@@ -11,14 +11,14 @@ import SwiftUI
 extension Font {
     
     public static var bodyParagraph: Font {
-        return Font.custom("LexendDeca-Regualr", size: 14)
+        return Font.custom("LexendDeca-Regular", size: 14)
     }
     
     public static var button: Font {
         return Font.custom("LexendDeca-SemiBold", size: 14)
     }
     
-    public static var caption: Font {
+    public static var smallText: Font {
         return Font.custom("LexendDeca-Regular", size: 10)
     }
     
