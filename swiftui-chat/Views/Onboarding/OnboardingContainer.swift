@@ -8,6 +8,7 @@
 import SwiftUI
 
 enum OnboardingStep: Int {
+    
     case welcome = 0
     case phonenumber = 1
     case verification = 2
@@ -16,29 +17,38 @@ enum OnboardingStep: Int {
 }
 
 struct OnboardingContainer: View {
+    
     @Binding var isOnboarding: Bool
-    @State var currentStep : OnboardingStep = .welcome
+    
+    @State var currentStep: OnboardingStep = .welcome
+    
     var body: some View {
         
-        
-        ZStack{
-            Text("helo")
+        ZStack {
+            
             Color("background")
                 .ignoresSafeArea(edges: [.top, .bottom])
+            
             switch currentStep {
+                
             case .welcome:
                 WelcomeView(currentStep: $currentStep)
+                
             case .phonenumber:
                 PhoneNumberView(currentStep: $currentStep)
+                
             case .verification:
-                VerificationView(currentStep: $currentStep)
+                VerificationView(currentStep: $currentStep, isOnboarding: $isOnboarding)
+                
             case .profile:
                 CreateProfileView(currentStep: $currentStep)
+                
             case .contacts:
                 SyncContactsView(isOnboarding: $isOnboarding)
             }
             
         }
+        
     }
 }
 

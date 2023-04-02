@@ -32,6 +32,8 @@ struct CustomTabBar: View {
             
             Button {
                 // Switch to chats
+                // Todo: This is not going to be the permanent home for logout
+                AuthViewModel.logout()
             } label: {
                 GeometryReader { geo in
                     
