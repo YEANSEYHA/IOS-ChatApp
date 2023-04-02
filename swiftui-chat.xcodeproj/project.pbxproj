@@ -17,6 +17,7 @@
 		0943D24B29D80D6100908C8E /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0943D24A29D80D6100908C8E /* ImagePicker.swift */; };
 		0943D24F29D9296700908C8E /* ContactsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0943D24E29D9296700908C8E /* ContactsListView.swift */; };
 		0943D25129D9299A00908C8E /* ChatsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0943D25029D9299A00908C8E /* ChatsListView.swift */; };
+		0943D25329D92EB900908C8E /* ContactRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0943D25229D92EB900908C8E /* ContactRow.swift */; };
 		0955C2A829D535BB00B20D4A /* TabBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0955C2A729D535BB00B20D4A /* TabBarButton.swift */; };
 		0955C2AA29D5399500B20D4A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0955C2A929D5399500B20D4A /* GoogleService-Info.plist */; };
 		0955C2AD29D5599600B20D4A /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 0955C2AC29D5599600B20D4A /* FirebaseAuth */; };
@@ -52,6 +53,7 @@
 		0943D24A29D80D6100908C8E /* ImagePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		0943D24E29D9296700908C8E /* ContactsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsListView.swift; sourceTree = "<group>"; };
 		0943D25029D9299A00908C8E /* ChatsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsListView.swift; sourceTree = "<group>"; };
+		0943D25229D92EB900908C8E /* ContactRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactRow.swift; sourceTree = "<group>"; };
 		0955C2A729D535BB00B20D4A /* TabBarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarButton.swift; sourceTree = "<group>"; };
 		0955C2A929D5399500B20D4A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0955C2B429D55A1600B20D4A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				0943D24E29D9296700908C8E /* ContactsListView.swift */,
+				0943D25229D92EB900908C8E /* ContactRow.swift */,
 			);
 			path = "Contacts View";
 			sourceTree = "<group>";
@@ -178,9 +181,9 @@
 		837CD84F2755655D00C6274E /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				837CD8432755654800C6274E /* RootView.swift */,
 				0943D24D29D9294800908C8E /* Contacts View */,
 				0943D24C29D9293C00908C8E /* Chats View */,
-				837CD8432755654800C6274E /* RootView.swift */,
 				0993ACF029D72D5A00CE391E /* Onboarding */,
 				090CF14229D2F3BD00E43294 /* Custom Tab Bar */,
 			);
@@ -332,6 +335,7 @@
 				0993ACFA29D72F9800CE391E /* CreateProfileView.swift in Sources */,
 				0993ACF629D72F6000CE391E /* PhoneNumberView.swift in Sources */,
 				837CD85D27556BDB00C6274E /* Fonts.swift in Sources */,
+				0943D25329D92EB900908C8E /* ContactRow.swift in Sources */,
 				0993ACF829D72F8300CE391E /* VerificationView.swift in Sources */,
 				0943D24F29D9296700908C8E /* ContactsListView.swift in Sources */,
 				0943D24329D7CA1200908C8E /* ContactsViewModel.swift in Sources */,
