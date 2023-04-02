@@ -8,26 +8,39 @@
 import SwiftUI
 
 struct RootView: View {
+    
     @State var selectedTab: Tabs = .contacts
+    
     @State var isOnboarding = !AuthViewModel.isUserLoggedIn()
+    
     var body: some View {
         
-        VStack{
-            Text("Hello, world!")
-                .padding()
-                .font(Font.chatHeading)
+        ZStack {
             
-            Spacer()
+            Color("background")
+                .ignoresSafeArea()
             
-            CustomTabBar(selectedTab: $selectedTab)
+            VStack {
+                
+                switch selectedTab {
+                    
+                case .chats:
+                    ChatsListView()
+                case .contacts:
+                    ContactsListView()
+                }
+                
+                Spacer()
+                
+                CustomTabBar(selectedTab: $selectedTab)
+            }
         }
         .fullScreenCover(isPresented: $isOnboarding) {
-            // on dismiss
+            // On dismiss
         } content: {
             // The onboarding sequence
             OnboardingContainer(isOnboarding: $isOnboarding)
         }
-
         
     }
     
